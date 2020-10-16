@@ -1,6 +1,6 @@
 # 'Stitch tutorial' repository
 
-Note: This repository shall only be used with the Stitch tutorial [https://link]. Not for use in production scenarios.
+Note: This repository shall only be used with the [Stitch tutorial](./tutorial.md). Not for use in production scenarios.
 
 Customizations available for deployments to Kubernetes:
 
