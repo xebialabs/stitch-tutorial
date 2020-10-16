@@ -1,17 +1,17 @@
 Stitch tutorial
 ===============
 
-This tutorial will teach you how to use Stitch capability of digital.ai Deploy, when deploying to a Kubernetes cluster. For more information about Stitch, please see [Introduction to Stitch](/deploy/stitch/introduction-to-stitch).
+This tutorial will teach you how to use Stitch capability of digital.ai Deploy, when deploying to a Kubernetes cluster. For more information about Stitch, please see [Introduction to Stitch](https://earlyaccessdocs.xebialabs.com/v.9.8/deploy/stitch/introduction-to-stitch).
 
 ## Prerequisites
 
-1. Install digital.ai Deploy 9.8 or later. Please refer to the [installation guide](/deploy/how-to/set-up-xl-deploy-in-production/).
+1. Install digital.ai Deploy 9.8 or later. Please refer to the [installation guide](/https://earlyaccessdocs.xebialabs.com/v.9.8/deploy/how-to/set-up-xl-deploy-in-production/).
 
 
  - For the purpose of this tutorial it is advised not to run Deploy in a container, since it will be harder to deploy to the same host if Docker Desktop Kubernetes is used.
 
 
-2. Download XL CLI [version 9.8](/release/how-to/install-the-xl-cli)
+2. Download XL CLI [version 9.8](https://earlyaccessdocs.xebialabs.com/v.9.8/release/how-to/install-the-xl-cli)
 
 3. Check that your K8s context points to your Kubernetes cluster (`kubectl cluster-info`)
 
