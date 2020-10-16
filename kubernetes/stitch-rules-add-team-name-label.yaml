@@ -1,0 +1,18 @@
+kind: Rules
+metadata:
+  namespace: k8s-tutorial
+spec:
+  - name: "k8s.AddTeamName"
+    description: "Adding a label to all YAMLs with a static team name"
+    condition:
+      deployedType: k8s.Resources
+    processor:
+      - type: patch
+        phase: PATCH
+        merge:
+          type: overlay
+        parameters:
+          patch:
+            - op: add
+              path: "/metadata/labels/xld-team-name"
+              value: "mario"
