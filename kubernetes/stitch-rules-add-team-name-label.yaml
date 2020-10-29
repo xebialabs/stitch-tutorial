@@ -8,6 +8,7 @@ spec:
       deployedType: k8s.Resources
     processor:
       - type: patch
+        description: "Simple patching processor"
         phase: PATCH
         merge:
           type: overlay
