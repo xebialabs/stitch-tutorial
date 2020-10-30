@@ -7,7 +7,7 @@ spec:
     condition:
       deployedType: k8s.Resources
       expression: "#input.getStringValue('$.kind') == 'Deployment'"
-      expression: "#ctx.deployedApplication.environment.name == 'kubernetes-env-prod'"      
+      expression: "#ctx.currentDeployedApplication != null && #ctx.currentDeployedApplication.environment.name == 'kubernetes-env-prod'"
     processor:
       - type: patch
         description: "Changing replicas to 3 and setting resource limits"
