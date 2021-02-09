@@ -1,0 +1,18 @@
+kind: Macros
+metadata:
+  namespace: k8s-tutorial
+spec:
+  - name: "k8s.MacroFreemarkerAddLabels"
+    description: "This is a macro for adding application and environment labels to /metadata/labels"
+    parameters: # default parameters
+      application: default
+      environment: default
+    processor:
+      - type: freemarker
+        description: "Adding app and env label using FreeMarker template"
+        phase: PATCH
+        weight: 50
+        merge:
+          type: overlay
+        parameters:
+          templateFile: labels-macro/labels-macro-template.ftl
